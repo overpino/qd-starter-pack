@@ -11,14 +11,14 @@
 #   Division: 2
 #
 
-def operazioni(num1:int, num2: int) -> int:
-    print("Somma:", a + b)
-    print("Differenza:", a - b)
-    print("Prodotto:", a * b)
-    if b == 0:
+def operazioni(num1:int, num2: int) -> None:
+    print("Somma:", num1 + num2)
+    print("Differenza:", num1 - num2)
+    print("Prodotto:", num1 * num2)
+    if num2 == 0:
         print("Divisione non possibile. Il divisore è 0.")
     else:
-        print("Divisione:", a / b)
+        print("Divisione:", num1 / num2)
 
 a = int(input("Inserisci il primo numero: "))
 b = int(input("Inserisci il secondo numero: "))
