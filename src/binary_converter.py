@@ -8,11 +8,11 @@
 
 def division(a: int) -> int:
     b = ''
-    while (a > 0):
+    while a > 0:
         if a % 2 == 0:
             b = '0' + b
         else:
-            b = '1' + b  
+            b = '1' + b
         a = a // 2
     return b
 
@@ -39,7 +39,7 @@ elif input < 0:
     result = division(input)
 
     result = result.zfill(16)
-    result = result.replace('0', '&').replace('1', '0').replace('&', '1')   
+    result = result.replace('0', '&').replace('1', '0').replace('&', '1')
 
     print(f"Stringa modificata: {carry(result)}")
 
